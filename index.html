@@ -6,19 +6,19 @@
         </title>
     </head>
     <body>
-        <header id="title">
+        <h1 id="title">
             Christopher Bimm's Bodacious Survey
-        </header>
+        </h1>
         <p id="description">
             This is my survey determining whether you're the type of person Chris Bimm would want to be friends with
         </p>
         <form id="survey-form">
             <label for="name" id="name-label">Enter your name:</label>
-            <input type="text" id="name" placeholder="First name only"><br>
-            <label for="email-label">Enter your email:</label>
-            <input type="email" id="email" placeholder="Enter your email"><br>
-            <label for="number-label" aria-placeholder="1">In a range of 1-10, how much do you love skiing? </label>
-            <input type="number" id="number" min="1" max="10"><br>
+            <input type="text" id="name" placeholder="First name only" required><br>
+            <label for="email" id="email-label">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <label for="number" id=number-label >In a range of 1-10, how much do you love skiing? </label>
+            <input type="number" id="number" min="1" max="10" placeholder="1-10"><br>
             <label for="dropdown" id="dropdown-label">Select your favourite spelling of favorite from the dropdown</label>
             <select id="dropdown">
                 <option>favorite</option>
@@ -36,7 +36,7 @@
             <input type="checkbox" name="reeses" value="reeses">
             <label for="reeses">Reeses Peanut Butter</label><br>
             <textarea id="additional-comments" placeholder="Any other comments?" rows="5"></textarea><br>
-            <input type="submit">
+            <input type="submit" id="submit">
         </form>
     </body>
 </html>
