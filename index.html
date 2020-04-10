@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Building a Survey form
+        </title>
+    </head>
+    <body>
+        <header id="title">
+            Christopher Bimm's Bodacious Survey
+        </header>
+        <p id="description">
+            This is my survey determining whether you're the type of person Chris Bimm would want to be friends with
+        </p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Enter your name:</label>
+            <input type="text" id="name" placeholder="First name only"><br>
+            <label for="email-label">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email"><br>
+            <label for="number-label" aria-placeholder="1">In a range of 1-10, how much do you love skiing? </label>
+            <input type="number" id="number" min="1" max="10"><br>
+            <label for="dropdown" id="dropdown-label">Select your favourite spelling of favorite from the dropdown</label>
+            <select id="dropdown">
+                <option>favorite</option>
+                <option>favourite</option>
+            </select><br>
+            <label for="birthdate">When were you born? </label>
+            <input type="radio" name="birthdate" value="pre1986"> Before me 
+            <input type="radio" name="birthdate" value="post1986"> After me <br>
+            <label for="simpsons-opinion">What's your opinion of the Simpsons?</label>
+            <input type="radio" name="simpsons-opinion" value="wrong"> Hate it
+            <input type="radio" name="simpsons-opinion" value="right"> Love it
+            <input type="radio" name="simpsons-opinion" value="wrong-but-less-so"> Indifferent<br>
+            <input type="checkbox" name="hot-chicken" value="hot-chicken">
+            <label for="hot-chicken">Hot chicken</label><br>
+            <input type="checkbox" name="reeses" value="reeses">
+            <label for="reeses">Reeses Peanut Butter</label><br>
+            <textarea id="additional-comments" placeholder="Any other comments?" rows="5"></textarea><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
